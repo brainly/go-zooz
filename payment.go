@@ -24,7 +24,7 @@ type Payment struct {
 	PossibleNextActions []PaymentNextAction `json:"possible_next_actions"`
 
 	// Expansions
-	PaymentMethod    *PaymentMethod           `json:"payment_method"`
+	PaymentMethod    *PaymentMethodHref       `json:"payment_method"`
 	Customer         *Customer                `json:"customer"`
 	RelatedResources *PaymentRelatedResources `json:"related_resources"`
 }

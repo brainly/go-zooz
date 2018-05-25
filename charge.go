@@ -19,7 +19,7 @@ type Charge struct {
 	Amount                     int64                   `json:"amount"`
 	Created                    json.Number             `json:"created"`
 	ReconciliationID           string                  `json:"reconciliation_id"`
-	PaymentMethod              PaymentMethod           `json:"payment_method"`
+	PaymentMethod              PaymentMethodHref       `json:"payment_method"`
 	ThreeDSecureAttributes     *ThreeDSecureAttributes `json:"three_d_secure_attributes"`
 	Installments               *Installments           `json:"installments"`
 	ProviderData               ProviderData            `json:"provider_data"`
