@@ -54,7 +54,7 @@ type ThreeDSInternal struct {
 	MobilePhoneCountry               string `json:"mobile_phone_country,omitempty"`
 	HomePhoneCountry                 string `json:"home_phone_country,omitempty"`
 	WorkPhoneCountry                 string `json:"work_phone_country,omitempty"`
-	AddressMatch                     bool   `json:"address_match,omitempty"`
+	AddressMatch                     *bool   `json:"address_match,omitempty"`
 	ProductCode                      string `json:"product_code,omitempty"`
 	ShippingMethodIndicator          string `json:"shipping_method_indicator,omitempty"`
 	DeliveryTimeFrame                string `json:"delivery_time_frame,omitempty"`
@@ -89,7 +89,7 @@ type ThreeDSInternal struct {
 	RecurringEndDate                 string `json:"recurring_end_date,omitempty"`
 	RecurringFrequency               int64  `json:"recurring_frequency,omitempty"`
 	BrowserHeader                    string `json:"browser_header,omitempty"`
-	BrowserJavaEnabled               bool   `json:"browser_java_enabled,omitempty"`
+	BrowserJavaEnabled               *bool   `json:"browser_java_enabled,omitempty"`
 	BrowserLanguage                  string `json:"browser_language,omitempty"`
 	BrowserColorDepth                string `json:"browser_color_depth,omitempty"`
 	BrowserScreenHeight              string `json:"browser_screen_height,omitempty"`
